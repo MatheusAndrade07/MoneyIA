@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>MoneyIA</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><h3 class="back"><</h3></a>
+            <h3 id="moneyia">MoneyIA</h3>
+            <a href="https://www.linkedin.com/in/matheus-andrade-pompermayer-88a560289/" target="_blank"><img src="linkedin-icon.png"id="Linkedin"></a>
+            <a href="https://github.com/MatheusAndrade07" target="_blank"><img src="github-icon.png" id="Github"></a>
+        </nav>
+    </header>
+    <main id="newspend">
+        <form id="form" autocomplete="off">
+            <h1>Inserir nova despesa</h1>
+            <br>
+            <label for="nome">Nome da despesa:</label>
+            <br>
+            <input type="text" name="nome" id="nome" required autocomplete="off">
+            <br>
+
+            <label for="custo">Custo:</label>
+            <br>
+            <input type="number" name="custo" id="custo" required autocomplete="off" min="0">
+            <br>
+
+            <label for="tipo">Tipo:</label>
+            <br>
+            <select name="tipo" id="tipo" required autocomplete="off">
+                <option id="0" disabled selected>Selecione</option>
+                <option id="1" value="Contas Domésticas">Contas domésticas (luz, água, internet)</option>
+                <option id="2" value="Aluguel">Aluguel</option>
+                <option id="3" value="Mercado">Mercado</option>
+                <option id="4" value="Delivery">Delivery de alimentos</option>
+                <option id="5" value="Transp. privado">Transporte privado</option>
+                <option id="6" value="Transp. Público">Transporte público</option>
+                <option id="7" value="Combustível">Combustível</option>
+                <option id="8" value="Carro">Carro (prestação, seguro, manutenção)</option>
+                <option id="9" value="Finanças">Finanças (prestações, empréstimos, cartão de crédito)</option>
+                <option id="10" value="Medicamentos">Medicamentos</option>
+                <option id="11" value="Saúde">Saúde (plano de saúde, seguro saude, consultas)</option>
+                <option id="12" value="Educação">Educação (mensalidades, materiais, cursos)</option>
+                <option id="13" value="Entretenimento">Entretenimento (cinema, clubes, shows, jogos, streamings)</option>
+                <option id="14" value="Vestuário">Vestuário</option>
+                <option id="15" value="Outros">Outros</option>
+              </select>
+              <br>
+
+              <label for="desc">Descrição:</label>
+              <br>
+              <input type="text" name="desc" id="desc" required autocomplete="off">
+              <br>
+              
+              <input type="submit" value="Salvar" id="salvar">
+              
+
+        </form>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

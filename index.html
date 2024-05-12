@@ -1,0 +1,54 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>MoneyIA</title>
+</head>
+<body>
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+      </script>
+      <script type="module" src="api.js"></script>
+
+    <header>
+        <nav>
+            <h3 id="cashai">MoneyIA</h3>
+            <a href="https://www.linkedin.com/in/matheus-andrade-pompermayer-88a560289/" target="_blank"><img src="linkedinIcon.png"id="Linkedin"></a>
+            <a href="https://github.com/MatheusAndrade07" target="_blank"><img src="githubIcon.png" id="Github"></a>
+        </nav>
+    </header>
+    <main>
+
+<table>
+  
+  <tr>
+    <td id="textos">
+      <div id="texto"></div>
+    </td>
+
+    <td class="content">
+      <div id="config">
+        <button id="new">➕</button>
+        <button id="del" class="vermelho">Excluir tudo</button>
+      </div>
+        <div id="gastos"></div>
+    </td>
+
+    <td class="total" id="total">
+      <div id="totaltxt"></div>
+    </td>
+  </tr>
+
+</table>
+    </main>
+
+  </body>
+</html>
